@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        #imageOutput {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Image Generator</h1>
+    </header>
+    <main>
+        <p>Enter a description and generate an image:</p>
+        <input type="text" id="imageDescription" placeholder="Describe the image here...">
+        <button onclick="generateImage()">Generate Image</button>
+        <div id="imageOutput">
+            <img src="" alt="" id="outputImage" style="max-width: 100%;">
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Image Generator. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function generateImage() {
+            const desc = document.getElementById('imageDescription').value;
+            // Placeholder for image generation logic
+            // For example, using an API to fetch an image based on the description
+            console.log("Generating image for:", desc);
+            // Example output
+            document.getElementById('outputImage').src = 'https://via.placeholder.com/640x480.png?text=Placeholder';
+        }
+    </script>
+</body>
+</html>
